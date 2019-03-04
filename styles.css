@@ -25,12 +25,19 @@ ul {
 
 /* Header */
 #header {
-  padding: 30px;;
+  padding: 20px;
+  text-align: center;
 }
 
 .title {
   font-size: 4rem;
-  text-align: center;
+}
+
+.header-text {
+  font-size: 2rem;
+  padding-top: 10px;
+  letter-spacing: .1rem;
+  font-style: italic;
 }
 
 /* Main Content */
@@ -58,7 +65,7 @@ ul {
 .footer-text {
   text-align: center;
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: .1rem;
 }
 
@@ -74,7 +81,7 @@ ul {
 }
 
 .fab:hover {
-  color: #ffe74f;
+  color: #FFEE93;
 }
 
 /* Journal Entry Colors */
