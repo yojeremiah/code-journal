@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: lightgray;
+  font-size: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Header */
+#header {
+  background-color: lightgray;
+  border-bottom: 5px solid #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+#header h1 {
+  font-size: 5rem;
+  margin-bottom: 5px;
+}
+
+#header p {
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+/* Section Titles & Quote */
+.section-title {
+  background-color: #333;
+  color: #f4f4f4;
+  font-size: 3.8rem;
+  text-align: center;
+  padding: 25px;
+}
+
+.quote {
+  background-color: #333;
+  color: #f4f4f4;
+  font-size: 3.2rem;
+  font-style: italic;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Cards */
+.card-container {
+  border-top: 5px solid #f4f4f4;;
+  border-bottom: 5px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  background: lightblue;
+  min-height: 200px;
+  padding: 10px 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+
+.card-label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card-label:first-of-type {
+  margin-top: 0;
+}
+
+.card-title {
+  margin: 10px 5px;
+  font-size: 2.8rem;
+}
+
+/* Lists */
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+/* Images */
+.personal-img {
+  background: url('../img/arnold-personal.png') no-repeat top center/cover;
+  order: 1;
+}
+
+.bodybuild-img {
+  background: url('../img/arnold-bodybuild.png') no-repeat center center/cover;
+  order: 1;
+}
+
+.actor-img {
+  background: url('../img/arnold-actor.png') no-repeat center center/cover;
+  order: 1;
+}
+
+.political-img {
+  background: url('../img/arnold-political.png') no-repeat center center/cover;
+  order: 1;
+}
+
+/* Footer */
+#footer {
+  background-color: lightgray;
+  border-top: 5px solid #f4f4f4;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 420px) {
+  html, body {
+    font-size: 8px;
+  }
+  .card {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #header h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card-container {
+    flex-direction: row;
+    border: 5px solid #f4f4f4;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+  }
+  .card {
+    max-width: 750px;
+    flex: 1;
+  }
+  .personal-img, 
+  .bodybuild-img, 
+  .actor-img, 
+  .personal-img {
+    order: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .card-container {
+    border: none;
+  }
+  .card {
+    border-left: 5px solid #f4f4f4;
+    border-right: 5px solid #f4f4f4;
+  }
+  .section-title {
+    border-top: 5px solid #f4f4f4;
+    border-bottom: 5px solid #f4f4f4;
+  }
+  .section-title:first-of-type{
+    border-top: none;
+  }
+  .quote {
+    border-top: 5px solid #f4f4f4;
+  }
+}
