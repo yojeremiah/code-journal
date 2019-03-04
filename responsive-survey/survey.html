@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="survey-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>UCSB Xtrav Survey</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="title"><h1>UCSB SURVEY</h1></header>
+
+  <!-- Form Container -->
+  <main class="form-container">
+    <div class="form-content">
+      <img src="ucsb.svg" alt="UCSB Text Logo" class="image">
+      <p class="description">Let us know how we can improve Extravaganza Music Festival</p>
+      <form action="#">
+        <!-- Name Input -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="name" class="form-label">Name:</label>
+        </div>
+        <div class="right">
+          <input type="text" class="text-input" id="name" name="name" placeholder="Enter your name">
+        </div>
+      </div>
+        <!-- Email Input -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="email" class="form-label">Email:</label>
+        </div>
+        <div class="right">
+          <input type="email" class="text-input" id="email" name="email" placeholder="Enter your email">
+        </div>
+      </div>
+        <!-- Age Input -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="age">Age:</label>
+        </div>
+        <div class="right">
+            <input type="number" class="text-input" id="age" name="age" placeholder="Enter your age">
+        </div>
+      </div>
+        <!-- Grade Level Select -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="grade" class="form-label">Select your grade level:</label>
+        </div>
+        <div class="right">
+          <select name="grade" id="grade" class="select-input">
+            <option value="" disabled selected>My Grade Level</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</options>
+              <option value="senior">Senior</option>
+              <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+        <!-- Recommendation Radio -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="recommend" class="form-label">How likely is it that you would attend Extravaganza again next year?</label>
+        </div>
+        <div class="right">
+          <ul class="input-list">
+            <li><input type="radio" id="definite" name="recommend" value="definite"><label for="definite" class="list-label">Definitely</label></li>
+            <li><input type="radio" id="maybe" name="recommend" value="maybe"><label for="maybe" class="list-label">Maybe</label></li>
+            <li><input type="radio" id="unlikely" name="recommend" value="unlikely"><label for="unlikely" class="list-label">Unlikely</label></li>
+          </ul>
+        </div>
+      </div>
+        <!-- Select Best -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="best" class="form-label">What did you like best about Extravaganza this year?</label>
+          </div>
+          <div class="right">
+            <select name="best" id="best" class="select-input">
+            <option value="" disabled selected>I liked the...</option>
+              <option value="art">Art</option> 
+              <option value="food">Food</option>
+              <option value="music">Music</option>
+              <option value="vibes">Vibes</option>
+            </select>
+          </div>
+        </div>
+        <!-- Genre Checkbox -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="genre" class="form-label">What genre(s) would you like to see more of next year? <br>(Mark all that apply)</label>
+        </div>
+        <div class="right">
+          <ul class="input-list">
+            <li><input type="checkbox" id="alt-indie" name="alt-indie" value="alt-indie"><label for="alt-indie" class="list-label">Alt/Indie</label></li>
+            <li><input type="checkbox" id="edm" name="edm" value="edm"><label for="edm" class="list-label">EDM</label></li>
+            <li><input type="checkbox" id="hip-hop" name="hip-hop" value="hip-hop"><label for="hip-hop" class="list-label">Hip-Hop</label></li>
+            <li><input type="checkbox" id="pop" name="pop" value="pop"><label for="pop" class="list-label">Pop</label></li>
+            <li><input type="checkbox" id="reggae" name="reggae" value="reggae"><label for="reggae" class="list-label">Reggae</label></li>
+          </ul>
+        </div>
+      </div>
+        <!-- Comment Textarea -->
+        <div class="form-group">
+        <div class="left form-label">
+          <label for="comment" class="form-label">Any additional feedback you would like to add?</label>
+        </div>
+        <div class="right">
+          <textarea name="comment" id="comment" class="text-box" placeholder="Enter any additional comments you may have"></textarea>
+        </div>
+      </div>
+        <!-- Submit Button -->
+          <input type="submit" class="btn" value="Submit Feedback">
+      </form>
+    </div>
+  </main>
+</body>
+</html>

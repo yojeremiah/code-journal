@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fcfcfc;
+  background-color: #256eff;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  padding: 25px;
+  font-size: 4.2rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  background-color: #3ddc97;
+  margin: 0 auto;
+  border-radius: 7px;
+}
+
+.journal-list {
+  list-style: none;
+}
+
+.journal-item a {
+  font-size: 3.2rem;
+  display: block;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.journal-item a:hover {
+  background-color: #ff495c;
+  font-style: italic;
+  transition: 10ms;
+}
