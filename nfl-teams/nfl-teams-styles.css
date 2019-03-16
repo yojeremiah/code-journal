@@ -127,8 +127,7 @@ a:hover {
   margin-top: 3rem;
 }
 .btn-container img {
-  width: 30vw;
-  height: 100%;
+  max-width: 100px;
 }
 
 a.btn {
@@ -254,7 +253,7 @@ a.btn {
     font-size: 1.8rem;
   }
   .btn-container img {
-    max-width: 300px;
+    max-width: 200px;
   }
   .division-title {
     font-size: 4rem;
