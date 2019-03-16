@@ -6,7 +6,7 @@
 }
 html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #67df71;
   background-color: #ccc;
   color: #000;
@@ -23,16 +23,11 @@ a:hover {
   cursor: pointer;
 }
 
-.page-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 /* Navigation */
-
 .navbar {
   background-color: #fff;
   border-bottom: 5px solid #67df71;
+  font-family: 'Bungee', sans-serif;
 }
 .navbar ul {
   min-width: 320px;
@@ -55,7 +50,7 @@ a:hover {
 }
 .navbar a {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .navbar a.afc-link {
   color: #d50a0a;
@@ -81,24 +76,33 @@ a:hover {
 }
 
 /* Home */
-#home.page {
+#home {
   height: 80vh;
-  padding: 0 2.5rem;
+}
+.home-container {
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .home-title {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 3.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Bungee', sans-serif;
+  margin-bottom: 3rem;
 }
 .home-content {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .home-content p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .home-content p:last-of-type {
   text-align: center;
@@ -113,6 +117,11 @@ a:hover {
   align-items: center;
   margin-top: 3rem;
 }
+.btn-container img {
+  width: 30vw;
+  height: 100%;
+}
+
 a.btn {
   font-size: 1.6rem;
   font-weight: bold;
@@ -145,46 +154,43 @@ a.btn {
 
 /* Conference Page Styles */
 .conference-page {
-  /* height: 80vh; */
-  max-width: 80vw;
+  width: 80vw;
+  max-width: 1100px;
   margin: 0 auto;
-}
 
-.conference-container {
-  /* display: flex; */
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 1rem;
 }
 
 .division-container {
-  flex: 1 1 47%;
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 2rem 0;
 }
 
 .division-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Bungee', sans-serif;
   text-align: center;
   margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .team-container {
   display: flex;
-  flex-wrap: wrap;
   border: 4px solid #fff;
 }
 
 .team {
-  flex: 1 18vw;
-  height: 17vh;
+  flex: 1 1 25vw;
+  /* height: 17vh; */
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .team img {
@@ -207,18 +213,44 @@ a.btn {
 }
 
 /* Media Queries */
-@media only screen and (min-width: 767px) {
-  .conference-container {
-    flex-direction: row;
+/* Tall Smart Phones */
+@media only screen and (min-height: 810px) and (max-width: 450px) {
+  .conference-page {
     height: 80vh;
+    display: flex;
+    align-items: center;
   }
-  /* .footer {
-    height: 8vh;
-  } */
+}
+/* Tablets & Larger */
+@media only screen and (min-width: 700px) {
+  html, body {
+    font-size: 16px;
+  }
+  .navbar {
+    border-bottom: 8px solid #67df71;
+  }
+  .navbar a {
+    font-size: 3rem;
+  }
+  .home-content {
+    font-size: 1.8rem;
+  }
+  .btn-container img {
+    max-width: 300px;
+  }
+  .division-title {
+    font-size: 4rem;
+  }
+  .team-container {
+    border: 8px solid #fff;
+  }
+  .footer {
+    border-top: 8px solid #67df71;
+  }
 }
 
 /* Team Colors */
-/* Source: https://teamcolorcodes.com/oakland-raiders-color-codes/ */
+/* Source: https://teamcolorcodes.com/nfl-team-color-codes/ */
 /* AFC NORTH */
 #bal {
   background-color: #241773;
@@ -270,4 +302,57 @@ a.btn {
 }
 #oak {
   background-color: #000000;
+}
+/* NFC */
+/* NFC NORTH */
+#chi {
+  background-color: #0B162A;
+}
+#det {
+  background-color: #0076B6;
+}
+#gb {
+  background-color: #203731;
+}
+#min {
+  background-color: #4F2683;
+}
+/* NFC EAST */
+#dal {
+  background-color: #003594;
+}
+#nyg {
+  background-color: #A5ACAF;
+}
+#phi {
+  background-color: #004C54;
+}
+#was {
+  background-color: #773141;
+}
+/* NFC SOUTH */
+#atl {
+  background-color: #A71930;
+}
+#car {
+  background-color: #0085CA;
+}
+#no {
+  background-color: #D3BC8D;
+}
+#tb {
+  background-color: #D50A0A;
+}
+/* NFC WEST */
+#az {
+  background-color: #97233F;
+}
+#lar {
+  background-color: #002244;
+}
+#sf {
+  background-color: #AA0000;
+}
+#sea {
+  background-color: #69BE28;
 }
