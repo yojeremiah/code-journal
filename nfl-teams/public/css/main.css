@@ -116,6 +116,11 @@ body {
   color: #fff;
   min-width: 320px; }
 
+h1,
+h2,
+h3 {
+  font-family: "Bungee", sans-serif; }
+
 ul {
   list-style: none; }
 
@@ -142,7 +147,7 @@ img {
       #navbar ul li a {
         display: block;
         width: 100%;
-        line-height: 61px;
+        line-height: 60px;
         font-weight: bold;
         padding: 0.25rem;
         transition: text-shadow 0.25s; }
@@ -166,6 +171,38 @@ img {
             background-color: #003399;
             color: #fff; }
 
+#home-page {
+  background-color: #ccc;
+  text-align: center; }
+  #home-page .page-container {
+    padding: 3rem 3rem;
+    min-height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    #home-page .page-container h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); }
+    #home-page .page-container .home-content {
+      color: #000;
+      font-size: 1.5rem; }
+      #home-page .page-container .home-content p {
+        padding: 1rem 0; }
+        #home-page .page-container .home-content p em {
+          font-size: 1.2rem; }
+    #home-page .page-container .home-logos {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      #home-page .page-container .home-logos a {
+        display: block; }
+        #home-page .page-container .home-logos a img {
+          max-width: 150px;
+          padding: 0 0.25rem; }
+
 #conference-page {
   background-color: #ccc; }
   #conference-page .page-container {
@@ -174,15 +211,16 @@ img {
     margin: 0 auto; }
   #conference-page h2 {
     text-align: center;
-    font-family: "Bungee", sans-serif;
-    font-size: 2.7rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
+    font-size: 2.3rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    animation: slide-in-left 1.5s ease-in-out; }
   #conference-page .division-container {
     display: flex;
     flex-wrap: wrap;
     border: 7px solid #fff;
     margin: 1.5rem auto;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    animation: slide-in-right 1.5s ease-in-out; }
     #conference-page .division-container .team {
       flex: 1 1 50%;
       display: flex;
@@ -215,6 +253,14 @@ img {
 @media only screen and (min-width: 700px) {
   #navbar {
     font-size: 2.4rem; }
+  #home-page {
+    line-height: 1.75; }
+    #home-page .page-container h1 {
+      font-size: 4rem; }
+    #home-page .page-container p {
+      font-size: 1.8rem; }
+    #home-page .page-container .home-logos a img {
+      max-width: 200px; }
   #conference-page h2 {
     font-size: 3rem; }
   #conference-page .division-container .team {

@@ -30,6 +30,12 @@ body {
   min-width: $min-width;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Bungee", sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -63,7 +69,7 @@ img {
       a {
         display: block;
         width: 100%;
-        line-height: 61px;
+        line-height: 60px;
         font-weight: bold;
         padding: 0.25rem;
         transition: text-shadow 0.25s;
@@ -107,6 +113,57 @@ img {
   }
 }
 
+// Home Page
+#home-page {
+  background-color: $bg-dark;
+  text-align: center;
+  // line-height: 1.85;
+
+  .page-container {
+    padding: 3rem 3rem;
+    min-height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .home-content {
+      color: #000;
+      font-size: 1.5rem;
+      // margin-bottom: 2rem;
+
+      p {
+        padding: 1rem 0;
+
+        em {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .home-logos {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      a {
+        display: block;
+        img {
+          max-width: 150px;
+          padding: 0 0.25rem;
+          // margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
 // Conference Page
 #conference-page {
   background-color: $bg-dark;
@@ -119,10 +176,9 @@ img {
 
   h2 {
     text-align: center;
-    font-family: "Bungee", sans-serif;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    // animation: slide-in-left $slide-duration ease-in-out;
+    animation: slide-in-left $slide-duration ease-in-out;
   }
   .division-container {
     display: flex;
@@ -130,7 +186,7 @@ img {
     border: $trim-width solid #fff;
     margin: 1.5rem auto;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    // animation: slide-in-right $slide-duration ease-in-out;
+    animation: slide-in-right $slide-duration ease-in-out;
 
     .team {
       flex: 1 1 50%;
@@ -179,6 +235,28 @@ img {
   #navbar {
     font-size: 2.4rem;
   }
+  #home-page {
+    line-height: 1.75;
+
+    .page-container {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .home-logos {
+        a {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+
   #conference-page {
     h2 {
       font-size: 3rem;
