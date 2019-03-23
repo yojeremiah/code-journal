@@ -13,7 +13,7 @@ $nfc-color: #003399;
 $text-color: #fff;
 $min-width: 320px;
 $max-width: 1100px;
-$slide-duration: 1.5s;
+$slide-duration: 1.25s;
 $tablet-breakpoint: 700px;
 
 // General Styles
@@ -56,6 +56,8 @@ img {
   border-bottom: $trim-width solid $trim-color;
   font-family: "Bungee", sans-serif;
   font-size: 2rem;
+  position: relative;
+  z-index: 2;
 
   ul {
     display: flex;
@@ -80,6 +82,7 @@ img {
 
         &#afc-link {
           color: $afc-color;
+          animation: slide-in-left $slide-duration ease-in-out;
 
           &:hover {
             background-color: $afc-color;
@@ -89,6 +92,7 @@ img {
 
         &#home-link {
           color: #fff;
+          animation: slide-in-top $slide-duration ease-in-out;
 
           &:hover {
             background-color: $bg-dark;
@@ -102,6 +106,7 @@ img {
 
         &#nfc-link {
           color: $nfc-color;
+          animation: slide-in-right $slide-duration ease-in-out;
 
           &:hover {
             background-color: $nfc-color;
@@ -129,12 +134,13 @@ img {
     h1 {
       font-size: 3rem;
       text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+      animation: slide-in-top $slide-duration ease-in-out;
     }
 
     .home-content {
       color: #000;
       font-size: 1.5rem;
-      // margin-bottom: 2rem;
+      animation: slide-in-top-content $slide-duration ease-in-out;
 
       p {
         padding: 1rem 0;
@@ -152,12 +158,21 @@ img {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+
       a {
         display: block;
+
+        &:first-child {
+          animation: slide-in-left $slide-duration ease-in-out;
+        }
+
+        &:last-child {
+          animation: slide-in-right $slide-duration ease-in-out;
+        }
+
         img {
           max-width: 150px;
           padding: 0 0.25rem;
-          // margin: 0 auto;
         }
       }
     }
@@ -212,6 +227,10 @@ img {
   font-size: 1.2rem;
   padding: 1rem;
   border-top: $trim-width solid $trim-color;
+
+  p {
+    animation: slide-in-bottom $slide-duration ease-in-out;
+  }
 
   a {
     color: #000;
@@ -276,7 +295,7 @@ img {
 // Animations
 @keyframes slide-in-left {
   from {
-    transform: translateX(-100vw);
+    transform: translateX(-150vw);
   }
   to {
     transform: translateX(0);
@@ -285,9 +304,35 @@ img {
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(200vw);
+    transform: translateX(150vw);
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(150vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-in-top-content {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
   }
 }
