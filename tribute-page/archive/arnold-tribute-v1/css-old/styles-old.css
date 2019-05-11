@@ -1,0 +1,152 @@
+/* Main Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #CDE6F5;
+  line-height: 1.1;
+}
+
+/* Utilities */
+.container {
+  max-width: 1720px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+#header {
+  background-color: #8DA7BE;
+  height: 100%;
+  padding: 15px;
+  border-bottom: 5px solid #ECEBF3;
+}
+
+#header h1 {
+  color: #0C120C;
+  font-size: 72px;
+  margin-bottom: 15px;
+}
+
+#header p {
+  color: #333;
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* Images */
+.img-card-young {
+  background: url('../img/arnold-young.png') no-repeat center/cover;
+}
+
+.img-card-bodybuild {
+  background: url('../img/arnold-bodybuild.png') no-repeat center/cover;
+}
+
+.img-card-actor {
+  background: url('../img/arnold-actor.png') no-repeat center/cover;
+}
+
+.img-card-politics {
+  background: url('../img/arnold-politics.png') no-repeat center/cover;
+}
+
+
+/* Main Content */
+.content-title {
+  color: #333;
+  font-size: 64px;
+  text-align: center;
+  padding: 50px;
+}
+
+.flex-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-card {
+  width: 820px;
+  background-color: #ECEBF3;
+  color: #707070;
+  border: 1px solid #0C120C;
+  border-radius: 3px;
+  padding: 40px 25px;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0 50px;
+}
+
+.personal-label {
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.content-card .personal-label:first-child {
+  padding-top: 0;
+}
+
+.content-header {
+  font-size: 36px;
+  padding: 15px 0;
+  font-style: normal;
+}
+
+.content-header-small {
+  font-size: 28px;
+  padding: 15px 0;
+  font-style: normal;
+}
+
+.flex-text {
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.flex-text ul {
+  list-style: none;
+  padding: 0 25px;
+}
+
+.flex-text ul li {
+  padding: 5px 0;
+}
+
+.quote {
+  font-size: 48px;
+  color: #333;
+  font-style: italic;
+  padding: 50px;
+}
+
+/* Footer */
+#footer {
+  background-color: #8DA7BE;
+  height: 100%;
+  padding: 25px;
+  border-top: 5px solid #ECEBF3;
+}
+
+.footer-text {
+  color: #333;
+  font-size: 24px;
+  font-style: italic;
+}
+
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+  .flex-cards {
+    flex-direction: column;
+  }
+} */

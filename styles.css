@@ -9,12 +9,13 @@ html,
 body {
   color: #f4f4f4;
   background-color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 10px;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: #f4f4f4;
   text-decoration: none;
 }
@@ -36,8 +37,8 @@ ul {
 .header-text {
   font-size: 2rem;
   padding-top: 10px;
-  letter-spacing: .1rem;
-  font-style: italic;
+  letter-spacing: 0.1rem;
+  /* font-style: italic; */
 }
 
 /* Main Content */
@@ -66,7 +67,7 @@ ul {
   text-align: center;
   font-size: 2rem;
   /* font-style: italic; */
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .socials {
@@ -81,87 +82,87 @@ ul {
 }
 
 .fab:hover {
-  color: #FFEE93;
+  color: #ffee93;
 }
 
 /* Journal Entry Colors */
-.color-1 { 
+.color-1 {
   background-color: #1abc9c;
-  border: 7.5px solid #1abc9c; 
+  border: 7.5px solid #1abc9c;
 }
-.color-1:hover { 
+.color-1:hover {
   color: #1abc9c;
   background-color: #f4f4f4;
 }
-.color-2 { 
-  background-color: #3498db; 
-  border: 7.5px solid #3498db; 
+.color-2 {
+  background-color: #3498db;
+  border: 7.5px solid #3498db;
 }
-.color-2:hover { 
+.color-2:hover {
   color: #3498db;
   background-color: #f4f4f4;
 }
-.color-3 { 
-  background-color: #9b59b6; 
-  border: 7.5px solid #9b59b6; 
+.color-3 {
+  background-color: #9b59b6;
+  border: 7.5px solid #9b59b6;
 }
-.color-3:hover { 
+.color-3:hover {
   color: #9b59b6;
   background-color: #f4f4f4;
 }
-.color-4 { 
-  background-color: #34495e; 
-  border: 7.5px solid #34495e; 
+.color-4 {
+  background-color: #34495e;
+  border: 7.5px solid #34495e;
 }
-.color-4:hover { 
+.color-4:hover {
   color: #34495e;
   background-color: #f4f4f4;
 }
-.color-5 { 
-  background-color: #f1c40f; 
-  border: 7.5px solid #f1c40f; 
+.color-5 {
+  background-color: #f1c40f;
+  border: 7.5px solid #f1c40f;
 }
-.color-5:hover { 
+.color-5:hover {
   color: #f1c40f;
   background-color: #f4f4f4;
 }
-.color-6 { 
+.color-6 {
   background-color: #e67e22;
   border: 7.5px solid #e67e22;
 }
-.color-6:hover { 
+.color-6:hover {
   color: #e67e22;
   background-color: #f4f4f4;
 }
-.color-7 { 
+.color-7 {
   background-color: #e74c3c;
   border: 7.5px solid #e74c3c;
 }
-.color-7:hover { 
+.color-7:hover {
   color: #e74c3c;
   background-color: #f4f4f4;
 }
-.color-8 { 
+.color-8 {
   background-color: #bdc3c7;
   border: 7.5px solid #bdc3c7;
 }
-.color-8:hover { 
+.color-8:hover {
   color: #bdc3c7;
   background-color: #f4f4f4;
 }
-.color-9 { 
+.color-9 {
   background-color: #2ecc71;
   border: 7.5px solid #2ecc71;
 }
-.color-9:hover { 
+.color-9:hover {
   color: #2ecc71;
   background-color: #f4f4f4;
 }
-.color-10 { 
-  background-color: #16a085; 
+.color-10 {
+  background-color: #16a085;
   border: 7.5px solid #16a085;
 }
-.color-10:hover { 
+.color-10:hover {
   color: #16a085;
   background-color: #f4f4f4;
 }
