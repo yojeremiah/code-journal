@@ -6,16 +6,20 @@
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
 
 body {
-  background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(img/back.jpg);
+  background-image: linear-gradient(
+      rgba(62, 20, 20, 0.4),
+      rgba(62, 20, 20, 0.4)
+    ),
+    url(img/back.jpg);
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   position: relative;
   height: 100vh;
@@ -78,12 +82,12 @@ body {
 }
 
 .active .player-name::after {
-  content: '\2022';
+  content: "\2022";
   font-size: 50px;
   position: absolute;
   color: #eb4d4d;
-  top: -11px;
-  right: 10px;
+  top: -8px;
+  right: 45px;
 }
 
 .player-current-box {
@@ -125,7 +129,7 @@ button {
   color: #555;
   background: none;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
