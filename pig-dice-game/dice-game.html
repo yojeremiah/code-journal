@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dice-game-styles.css" />
+    <!-- <script src="dice-game.js" defer></script> -->
+    <script src="dice-game-extras.js" defer></script>
+    <title>The Pig Dice Game</title>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <form action="#" class="input-group" id="input-form">
+        <label for="max-score" id="max-score-label">Adjust winning score:</label>
+        <input type="number" id="max-score-input" name="max-score" min="1" max="9999" value="100" />
+        <input type="submit" id="submit-score" value="Adjust Score" />
+      </form>
+
+      <!-- Previous Rolls Display -->
+      <div class="previous-rolls-box">
+        <h4>Previous Roll Values</h4>
+        <p class="previous-rolls-text">Dice1: XX - Dice2: XX</p>
+      </div>
+
+      <!-- Player 0 -->
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 0</div>
+        <div class="player-score" id="score-0">00</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">13</div>
+        </div>
+      </div>
+      <!-- Player 1 -->
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 1</div>
+        <div class="player-score" id="score-1">00</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+      <button class="btn-new"><i class="ion-ios-plus-outline"></i> New Game</button>
+      <button class="btn-roll"><i class="ion-ios-loop"></i> Roll Dice</button>
+      <button class="btn-hold"><i class="ion-ios-download-outline"></i> Hold</button>
+      <button class="btn-how2play"><i class="ion-ios-paper-outline"></i> How To Play</button>
+
+      <!-- Info Modal -->
+      <div id="info-modal" class="modal">
+        <div class="info-modal-content">
+          <span class="close">CLOSE</span>
+          <h2 class="info-modal-title">Pig Dice Game Rules</h2>
+          <p>
+            The rules of the pig dice game are rather simple
+          </p>
+          <p>A player rolls two dice by clicking the <strong>Roll Dice</strong> button below</p>
+
+          <p>The player can choose to <strong>hold</strong> their current score, which will add it to their global score and end their turn</p>
+          <p>
+            The player can also choose to <strong>roll the dice again</strong>, adding each of their consecutive rolls to the sum of all previous
+            rolls made on that turn
+          </p>
+          <p>
+            However, the player's current score is reset to zero and their turn is over when they
+            <strong class="red">roll a 1 on either die</strong> or <strong class="red">roll consecutive 6's on either die</strong>
+          </p>
+          <p>The first player to reach the desired global score will win the game <br /><strong>(default winning score = 100)</strong></p>
+        </div>
+      </div>
+
+      <img src="img/dice-1.png" alt="Roll The Dice" class="dice" />
+      <img src="img/dice-1.png" alt="Roll The Dice" class="dice2" />
+    </div>
+  </body>
+</html>
